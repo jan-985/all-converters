@@ -1,0 +1,107 @@
+converter
+Any number to any value
+put the number
+convert
+Temperature Converter
+Fahrenheit to Celcius: (input-32)/1.8;
+Fahrenheit to Kelvin: ((input-32)/1.8)+273.15;
+Celcius to Fahrenheit: (input*1.8)+32;
+Celcius to Kelvin: input+273.15;
+Kelvin to Fahrenheit: ((input-273.15)*1.8)+32;
+Kelvin to Celsius: input-273.15;
+
+Weight Converter
+
+Pounds to Kilograms: input/2.2046;
+Pounds to Ounces: input*16;
+Pounds to Grams: input/0.0022046;
+Pounds to Stones: input*0.071429;
+
+Kilograms to Pounds: input*2.2046;
+Kilograms to Ounces: input*35.274;
+Kilograms to Grams: input*1000;
+Kilograms to Stones: input*0.1574;
+
+Ounces to Pounds: input*0.0625;
+Ounces to Kilograms: input/35.274;
+Ounces to Grams: input/0.035274;
+Ounces to Stones: input*0.0044643;
+
+Grams to Pounds: input*0.0022046;
+Grams to Kilograms: input/1000;
+Grams to Ounces: input*0.035274;
+Grams to Stones: input*0.00015747;
+
+Stones to Pounds: input*14;
+Stones to Kilograms: input/0.15747;
+Stones to Ounces: input*224;
+Stones to Grams: input/0.00015747;
+
+Length Converter
+
+Feet to Meters: input/3.2808;
+Feet to Inches: input*12;
+Feet to cm: input/0.032808;
+Feet to Yards: input*0.33333;
+Feet to Kilometers: input/3280.8;
+Feet to Miles: input*0.00018939;
+
+Meters to Feet: input*3.2808;
+Meters to Inches: input*39.370;
+Meters to cm: input/0.01;
+Meters to Yards: input*1.0936;
+Meters to Kilometers: input/1000;
+Meters to Miles: input*0.00062137;
+
+Inches to Feet: input*0.083333;
+Inches to Meters: input/39.370;
+Inches to cm: input/0.39370;
+Inches to Yards: input*0.027778;
+Inches to Kilometers: input/39370;
+Inches to Miles: input*0.000015783;
+
+cm to Feet: input*0.032808;
+cm to Meters: input/100;
+cm to Inches: input*0.39370;
+cm to Yards: input*0.010936;
+cm to Kilometers: input/100000;
+cm to Miles: input*0.0000062137;
+
+Yards to Feet: input*3;
+Yards to Meters: input/1.0936;
+Yards to Inches: input*36;
+Yards to cm: input/0.010936;
+Yards to Kilometers: input/1093.6;
+Yards to Miles: input*0.00056818;
+
+Kilometers to Feet: input*3280.8;
+Kilometers to Meters: input*1000;
+Kilometers to Inches: input*39370;
+Kilometers to cm: input*100000;
+Kilometers to Yards: input*1093.6;
+Kilometers to Miles: input*0.62137;
+
+Miles to Feet: input*5280;
+Miles to Meters: input/0.00062137;
+Miles to Inches: input*63360;
+Miles to cm: input/0.0000062137;
+Miles to Yards: input*1760;
+Miles to Kilometers: input/0.62137;
+
+Speed Converter
+
+MPH to KPH: input*1.609344;
+MPH to Knots: input/1.150779;
+MPH to Mach: input/761.207;
+
+KPH to MPH: input/1.609344;
+KPH to Knots: input/1.852;
+KPH to Mach: input/1225.044;
+
+Knots to MPH: input*1.150779;
+Knots to KPH: input*1.852;
+Knots to Mach: input/661.4708;
+
+Mach to MPH: input*761.207;
+Mach to KPH: input*1225.044;
+Mach to Knots: input*661.4708;

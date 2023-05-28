@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="converter.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <title>All Converter</title>
+
+</head>
+
+<body>
+  <header class="text-center m-2">
+    <h1 class="display-3">Converters</h1>
+
+  </header>
+
+  <div class="container bg-body-1  p-5 ">
+    <h1 class="h1 text-center p-1 mb-5 ">
+      Converter<br>
+      Any number to any value
+    </h1>
+    <div class="input-group mb-5">
+      <button onclick="convert()" class="btn btn-outline-primary" type="button" id="button-addon1">Convert</button>
+      <input type="text" class="form-control" placeholder="Enter any Value" aria-label="Example text with button addon"
+        aria-describedby="button-addon1" id="input-number">
+    </div>
+    <div class="row text-center">
+      <h1 class="h3 text-center mb-4">Temperature Converter</h1>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Fahrenheit to Celcius</p>
+        <p class="color-text-1" id="Fahrenheit to Celcius"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Fahrenheit to Kelvin</p>
+        <p class="color-text-1" id="Fahrenheit to Kelvin"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Celcius to Fahrenheit</p>
+        <p class="color-text-1" id="Celcius to Fahrenheit"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Celcius to Kelvin</p>
+        <p class="color-text-1" id="Celcius to Kelvin"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kelvin to Fahrenheit</p>
+        <p class="color-text-1" id="Kelvin to Fahrenheit"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kelvin to Celsius</p>
+        <p class="color-text-1" id="Kelvin to Celsius"></p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <h1 class="h3 text-center mb-4 mt-4">Weight Converter</h1>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Pounds to Kilograms</p>
+        <p class="color-text-1" id="Pounds to Kilograms"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Pounds to Ounces</p>
+        <p class="color-text-1" id="Pounds to Ounces"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Pounds to Grams</p>
+        <p class="color-text-1" id="Pounds to Grams"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Pounds to Stones</p>
+        <p class="color-text-1" id="Pounds to Stones"></p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kilograms to Pounds</p>
+        <p class="color-text-1" id="Kilograms to Pounds"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kilograms to Ounces</p>
+        <p class="color-text-1" id="Kilograms to Ounces"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kilograms to Grams</p>
+        <p class="color-text-1" id="Kilograms to Grams"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kilograms to Stones</p>
+        <p class="color-text-1" id="Kilograms to Stones"></p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Ounces to Pounds</p>
+        <p class="color-text-1" id="Ounces to Pounds"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Ounces to Kilograms</p>
+        <p class="color-text-1" id="Ounces to Kilograms"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Ounces to Grams</p>
+        <p class="color-text-1" id="Ounces to Grams"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Ounces to Stones</p>
+        <p class="color-text-1" id="Ounces to Stones"></p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Grams to Pounds</p>
+        <p class="color-text-1" id="Grams to Pounds"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Grams to Kilograms</p>
+        <p class="color-text-1" id="Grams to Kilograms"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Grams to Ounces</p>
+        <p class="color-text-1" id="Grams to Ounces"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Grams to Stones</p>
+        <p class="color-text-1" id="Grams to Stones"></p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Stones to Pounds</p>
+        <p class="color-text-1" id="Stones to Pounds"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Stones to Kilograms</p>
+        <p class="color-text-1" id="Stones to Kilograms"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Stones to Ounces</p>
+        <p class="color-text-1" id="Stones to Ounces"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Stones to Grams</p>
+        <p class="color-text-1" id="Stones to Grams"></p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <h1 class="h3 text-center mb-4 mt-4">Length Converter</h1>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Feet to Meters</p>
+        <p class="color-text-1" id="Feet to Meters"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Feet to Inches</p>
+        <p class="color-text-1" id="Feet to Inches"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Feet to cm</p>
+        <p class="color-text-1" id="Feet to cm"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Feet to Yards</p>
+        <p class="color-text-1" id="Feet to Yards"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Feet to Kilometers</p>
+        <p class="color-text-1" id="Feet to Kilometers"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Feet to Miles</p>
+        <p class="color-text-1" id="Feet to Miles"></p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Meters to Feet</p>
+        <p class="color-text-1" id="Meters to Feet"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Meters to Inches</p>
+        <p class="color-text-1" id="Meters to Inches"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Meters to cm</p>
+        <p class="color-text-1" id="Meters to cm"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Meters to Yards</p>
+        <p class="color-text-1" id="Meters to Yards"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Meters to Kilometers</p>
+        <p class="color-text-1" id="Meters to Kilometers"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Meters to Miles</p>
+        <p class="color-text-1" id="Meters to Miles"></p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Inches to Feet</p>
+        <p class="color-text-1" id="Inches to Feet"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Inches to Meters</p>
+        <p class="color-text-1" id="Inches to Meters"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Inches to cm</p>
+        <p class="color-text-1" id="Inches to cm"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Inches to Yards</p>
+        <p class="color-text-1" id="Inches to Yards"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Inches to Kilometers</p>
+        <p class="color-text-1" id="Inches to Kilometers"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Inches to Miles</p>
+        <p class="color-text-1" id="Inches to Miles"></p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">cm to Feet</p>
+        <p class="color-text-1" id="cm to Feet"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">cm to Meters</p>
+        <p class="color-text-1" id="cm to Meters"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">cm to Inches</p>
+        <p class="color-text-1" id="cm to Inches"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">cm to Yards</p>
+        <p class="color-text-1" id="cm to Yards"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">cm to Kilometers</p>
+        <p class="color-text-1" id="cm to Kilometers"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">cm to Miles</p>
+        <p class="color-text-1" id="cm to Miles"></p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Yards to Feet</p>
+        <p class="color-text-1" id="Yards to Feet"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Yards to Meters</p>
+        <p class="color-text-1" id="Yards to Meters"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Yards to Inches</p>
+        <p class="color-text-1" id="Yards to Inches"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Yards to cm</p>
+        <p class="color-text-1" id="Yards to cm"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Yards to Kilometers</p>
+        <p class="color-text-1" id="Yards to Kilometers"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Yards to Miles</p>
+        <p class="color-text-1" id="Yards to Miles"></p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kilometers to Feet</p>
+        <p class="color-text-1" id="Kilometers to Feet"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kilometers to Meters</p>
+        <p class="color-text-1" id="Kilometers to Meters"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kilometers to Inches</p>
+        <p class="color-text-1" id="Kilometers to Inches"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kilometers to cm</p>
+        <p class="color-text-1" id="Kilometers to cm"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kilometers to Yards</p>
+        <p class="color-text-1" id="Kilometers to Yards"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Kilometers to Miles</p>
+        <p class="color-text-1" id="Kilometers to Miles"></p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Miles to Feet</p>
+        <p class="color-text-1" id="Miles to Feet"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Miles to Meters</p>
+        <p class="color-text-1" id="Miles to Meters"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Miles to Inches</p>
+        <p class="color-text-1" id="Miles to Inches"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Miles to cm</p>
+        <p class="color-text-1" id="Miles to cm"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Miles to Yards</p>
+        <p class="color-text-1" id="Miles to Yards"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Miles to Kilometers</p>
+        <p class="color-text-1" id="Miles to Kilometers"></p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <h1 class="h3 text-center mb-4 mt-4">Speed Converter</h1>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">MPH to KPH</p>
+        <p class="color-text-1" id="MPH to KPH"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">MPH to Knots</p>
+        <p class="color-text-1" id="MPH to Knots"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">MPH to Mach</p>
+        <p class="color-text-1" id="MPH to Mach"></p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">KPH to MPH</p>
+        <p class="color-text-1" id="KPH to MPH"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">KPH to Knots</p>
+        <p class="color-text-1" id="KPH to Knots"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">KPH to Mach</p>
+        <p class="color-text-1" id="KPH to Mach"></p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Knots to MPH</p>
+        <p class="color-text-1" id="Knots to MPH"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Knots to KPH</p>
+        <p class="color-text-1" id="Knots to KPH"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Knots to Mach</p>
+        <p class="color-text-1" id="Knots to Mach"></p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Mach to MPH</p>
+        <p class="color-text-1" id="Mach to MPH"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Mach to KPH</p>
+        <p class="color-text-1" id="Mach to KPH"></p>
+      </div>
+      <div class="col bg-body-2 m-2 border border-1 border-dark rounded-3">
+        <p class="m-2">Mach to Knots</p>
+        <p class="color-text-1" id="Mach to Knots"></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script type="text/javascript" src="converter.js"></script>
+</body>
+
+</html>
